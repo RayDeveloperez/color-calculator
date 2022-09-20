@@ -5,7 +5,7 @@ console.log("Do you wish to Combine or Deconstruct a Color? ")
 let decision = prompt("-->")
 
 
-if (decision === "combine"){
+if (decision.toLowerCase() === "combine"){
     console.log("You have chose to combine 2 colors!")
     let color1 = prompt("Enter your first color: ")
     let color2 = prompt("Enter your second color: ")
@@ -15,13 +15,13 @@ if (decision === "combine"){
             console.log(" The color combination is  ~ORANGE~")
     }else if  (color1 === "blue" && color2 === "yellow" || color1 === "yellow" && color2 === "blue" ){
             console.log(" The color combination is  ~GREEN~")       
-    }else if  (color1 !== "red" || "blue"|| "yellow" || color2 !== "red" || "blue"|| "yellow"){
+    }else if  (color1 !== "red" || color1 !==  "blue"|| color1 !==  "yellow" || color2 !== "red" || color2 !== "blue"|| color2 !== "yellow"){
             console.log("~~~~~ERROR~~~~~") 
 
 }
 }
 
- if (decision  === "deconstruct"){
+ if (decision.toLowerCase()  === "deconstruct"){
     console.log("You have chose to deconstruct a color!")
     let color3 = prompt("Enter the color you wish to deconstruct: ")
     if (color3 === "purple"){
